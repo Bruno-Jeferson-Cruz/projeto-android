@@ -1,0 +1,177 @@
+@charset "UTF-8";
+:root{
+    --cor0: #e5f7e8;
+    --cor05:#91c99a;
+    --cor1: #BDFAC7;
+    --cor2: #008000;
+    --cor3: #20612B;
+    --cor5: #023b02;
+    --fonteandroid:'idroid';
+
+}
+
+@font-face {
+    font-family: idroid;
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+header{
+    padding: 10px;
+    margin: -25px -7px 0px -7px;
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor5));
+    min-height: 100px;
+}
+
+header > h1{
+    color: white;
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+p#slogan{
+    color: lightgrey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: rgb(184, 140, 140);
+    font-weight: bold;
+    padding: 10px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-decoration: underline;
+    margin: 0%;
+    border-radius: 10px;
+}
+
+body{
+    background-color: var(--cor1);
+    font-size: normal;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+    font-size: 0.7em;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 70%;
+    margin:auto;
+    padding: 10px;
+    box-shadow: 0px 0px 12px black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+div.video{
+    background-color: var(--cor3);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin: 0px -10px;
+    padding: 20px;
+    position: relative;
+    padding-bottom:55.2%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    height: 92%;
+    width: 92%;
+}
+
+main  img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    margin: auto;
+}
+
+main > article > h1,h2{
+    font-family: var(--fonteandroid);
+    color: var(--cor3);
+    margin: 15px;
+}
+main a{
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor1);
+    
+}
+main a:hover{
+    text-decoration: underline;
+}
+main strong{
+    color: var(--cor2);
+}
+h1#Titulo{
+    font-size: 2em;
+}
+
+h2{
+    font-weight: normal;
+    width: auto;
+    text-indent: 10px;
+    background-image: linear-gradient(to right,var(--cor1),var(--cor0));
+}
+
+img{
+    margin:auto;
+    padding:4px;
+    display: block;
+}
+
+p{
+    font-size: normal;
+    font-weight: bold;
+    margin: 15px 0px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1em;
+}
+
+aside{
+    background-color: var(--cor0);
+    border-radius: 15px;
+    padding: 0px 12px 12px 12px;
+    margin: 20px;
+}
+aside >ul{
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3{
+    font-size: 1.4em;
+    background-color: var(--cor3);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+    margin: -3px -12px 0px -12px;
+}
+
+footer{
+    font-size: 0.8em;
+    background-color: var(--cor5);
+}
+
+.direito{
+    text-align: center;
+}
+.direito >a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.direito >a:hover{
+    color: bisque;
+}
